@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About A Research's Description</h1>
+    <form action = "{% url 'a_res_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for="">A Research's Title : </label>
+        <input type = 'text' name = 'a_res_title'><br><br>
+        <label for="">A Research's Description : </label>
+        <input type = 'text' name = 'a_res_description'><br><br>
+        <label for="">A Research's Duration : </label>
+        <input type = 'text' name = 'a_res_duration'><br><br>       
+        <input type = 'submit'><br><br>
+    </form>
+</body>
+</html>

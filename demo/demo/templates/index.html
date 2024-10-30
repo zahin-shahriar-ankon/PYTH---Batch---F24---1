@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman Md Sultan</title>
+
+    <!----------------- Favicon ---------------->
+    <link rel="icon" type="image/x-icon" href="{% static './asset/images/logos/p2.jpg' %}">
+
+
+    <!-------------- Font Awesome ------------->
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' %}">
+
+
+    <!-------------- Google Font ----------------->
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap' %}" rel="stylesheet">
+
+
+    <!--------------- Bootstrap CSS ----------------->
+    <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' %}">
+
+
+    <!-------------- Custom CSS --------------------->
+    <link rel="stylesheet" href="{% static './asset/css/style.css' %}">
+</head>
+<body>
+
+    <!-------------- Header -------------->
+    <section class="header_section">
+        <div class="container">
+            <div class="header_manage"></div>
+            <div class="header_main">
+                <div class="header_logo">
+                    <a href="#" class="hLogoLink">
+                        <img class="main_logo" src="{% static './asset/images/logos/p2.jpg' %}" alt="Salman Md Sultan">
+                        <p class="logo_text">Salman Md Sultan</p>
+                    </a>
+                </div>
+
+                <!------------Desktop Menubar ------------->
+                <div class="header_menu d-none d-lg-block">
+                    <ul class="menu_list">
+                        <li class="menu_iten">
+                            <a href="#" class="menu_link active">Home</a>
+                        </li>
+                        <li class="menu_iten">
+                            <a href="#aboutSection" class="menu_link">About</a>
+                        </li>
+                        <li class="menu_iten">
+                            <a href="#educationSection" class="menu_link">Education</a>
+                        </li>
+                        <li class="menu_iten">
+                            <a href="#projectSection" class="menu_link">Projects</a>
+                        </li>
+                        <li class="menu_iten">
+                            <a href="#experienceSection" class="menu_link">Experience</a>
+                        </li>
+                        <li class="menu_iten">
+                            <a href="#researchSection" class="menu_link">Research</a>
+                        </li>
+                        <li class="menu_iten">
+                            <a href="#skillsSection" class="menu_link">Skills</a>
+                        </li>    
+                        <li class="menu_iten">
+                            <a href="#serviceSection" class="menu_link">Services</a>
+                        </li>
+                        <li class="menu_iten">
+                            <a href="#contactSection" class="menu_link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!------------Mobile Menubar ------------->
+                <div class="mobile_menu d-block d-lg-none">
+                    <div class="mobile_menu_toggoler d-block d-xl-none">
+                        <button class="offcanvas_toggle_btn " data-bs-target="#myOffcanvas" data-bs-toggle="offcanvas">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+
+                    <div class="offcanvas_menu offcanvas-start offcanvas" id="myOffcanvas">
+
+                        <!-- Offcanvas header -->
+                        <div class="offcanvas_header">
+                            <p class="mobile_logo">Salman Md Sultan</p>
+                            <button class="offcanvas_close" data-bs-dismiss="offcanvas">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+
+                        <!-- offcanvas body -->
+                        <div class="offcanvas_body">
+                            <ul class="mobile_menu_list">
+                                <li class="mobile_item">
+                                    <a href="#" class="mobile_link active">Home</a>
+                                </li>
+                                <li class="mobile_item">
+                                    <a href="#aboutSection" class="mobile_link">About me</a>
+                                </li>
+                                <li class="mobile_item">
+                                    <a href="#educationSection" class="mobile_link">Education</a>
+                                </li>
+                                <li class="mobile_item">
+                                    <a href="#projectSection" class="mobile_link">Projects</a>
+                                </li>
+                                <li class="mobile_item">
+                                    <a href="#experienceSection" class="mobile_link">Experience</a>
+                                </li>
+                                <li class="mobile_item">
+                                    <a href="#researchSection" class="mobile_link">Research</a>
+                                </li>
+                                <li class="mobile_item">
+                                    <a href="#skillsSection" class="mobile_link">Skills</a>
+                                </li>    
+                                <li class="mobile_item">
+                                    <a href="#serviceSection" class="mobile_link">Services</a>
+                                </li>
+                                <li class="mobile_item">
+                                    <a href="#contactSection" class="mobile_link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- offcanvas footer -->
+                        <div class="offcanvas_footer">
+                            <h2 class="sub_title_2">Follow Me</h2>
+                            <div class="offcanvas_social">
+                                <a href="#" class="of_social_link" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="of_social_link" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="of_social_link" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="of_social_link" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!----------- Slider section ------------->
+    <section class="slider_section">
+        <div class="container">
+            <div class="slider_main">
+                <div class="slider_left">
+                    <p class="top_sub_title">Hello I'm</p>
+                    <h1 class="title_top">{{i.i_name}}</h1>
+                    <div class="slider_bottom_div">
+                        <p class="title_para">I am a</p>
+                        <div class="title_para_inner">
+                            <p class="sub_para textToType">{{i.i_occupation}}</p>
+                        </div>
+                    </div>
+                    <a href="#" class="knowmore_btn btn_primary">
+                        <span>Know more</span>
+                        <i class="fa-sharp fa-solid fa-right-long"></i>
+                    </a>
+                </div>
+                <div class="slider_right">
+                    
+                    <img class="slider_img" src="{% static './asset/images/topSlider/slider1-removebg-preview.png' %}" alt="Salman">
+                </div>
+
+                <div class="slider_social">
+
+                        <!-- Social single -->
+                        <div class="Ssocial_single">
+                            <a href="#" class="social_lick" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+
+                        <!-- Social single -->
+                        <div class="Ssocial_single">
+                            <a href="#" class="social_lick" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+
+                        <!-- Social single -->
+                        <div class="Ssocial_single">
+                            <a href="#" class="social_lick" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                        <!-- Social single -->
+                        <div class="Ssocial_single">
+                            <a href="#" class="social_lick" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!------ work section -------> 
+    <section class="work_first">
+        <div class="container">
+            <div class="work_main">
+                <!-- Work single -->
+                {% for i in w %}
+                <div class="work_single">
+                    <i class="fa-solid fa-school"></i>
+                    <h2 class="sub_title">{{i.w_title}}</h2>
+                    <p class="paragraph">{{i.w_description}} <molestiae class="lorem10"></molestiae></p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- About us section -->
+    <section class="aboutus_section" id="aboutSection">
+        <div class="container">
+            <div class="aboutus_main">
+                <div class="about_left">
+                    <img class="about_image" src="{% static './asset/images/personal/natural.jpg' %}" alt="Salman Md Sultan">
+                </div>
+                <div class="about_righ">
+                    <p class="small_title">About me</p>
+                    <h2 class="sub_title">I Develop System that Works</h2>
+                    <p class="paragraph">{{a.a_description}}</p>
+
+                    <div class="about_right_bottom">
+
+                        <!-- Bottom left -->
+                        <div class="aboutB_left">
+                            <div class="aboutB_single">
+                                <p class="aboutB_key">Name</p>
+                                <p class="aboutB_value">{{a.a_name}}</p>
+                            </div>
+                            <div class="aboutB_single">
+                                <p class="aboutB_key">Age</p>
+                                <p class="aboutB_value">{{a.a_age}}</p>
+                            </div>
+                            <div class="aboutB_single">
+                                <p class="aboutB_key">Occupation</p>
+                                <p class="aboutB_value">{{a.a_occupation}}</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom right -->
+                        <div class="aboutB_right">
+                            <div class="aboutB_single">
+                                <p class="aboutB_key">Phone</p>
+                                <p class="aboutB_value">{{a.a_phone}}</p>
+                            </div>
+                            <div class="aboutB_single">
+                                <p class="aboutB_key">Email</p>
+                                <p class="aboutB_value">{{a.a_email}}</p>
+                            </div>
+                            <div class="aboutB_single">
+                                <p class="aboutB_key">Nationality</p>
+                                <p class="aboutB_value">{{a.a_nationality}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Signature -->
+                    <div class="signature">
+                        <h3 class="signature_title">Salman Md Sultan</h3>
+                        <p class="work_place">{{a.a_description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section class="education_section sections" id="educationSection">
+        <div class="container">
+            <div class="education_main row">
+
+                <!-- Education title -->
+                <div class="education_title text-center text-lg-start ps-lg-4 col-lg-5">
+                    <p class="small_title">education</p>
+                    <h2 class="sub_title text-center text-lg-start">My Education</h2>
+                    <p class="paragraph">{{e.e_description}}</p>
+                </div>
+
+                <!-- Education body -->
+                <div class="education_body col-lg-7 ps-lg-4">
+                    {% for i in d %}
+                    <!-- education single -->
+                    <div class="education_single">
+                        <div class="edu_icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu_content">
+                            <h3 class="sub_title_2">{{i.d_title}}</h3>
+                            <h4 class="medium_title">{{i.d_institution}}<span class="small_text ms-2">({{i.d_duration}})</span></h4>
+                            <p class="paragraph">{{i.d_description}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="project_section sections" id="projectSection">
+        <div class="container">
+            <div class="project_main">
+
+                <!-- Project heading -->
+                <div class="project_title text-center mb-4 mb-lg-5">
+                    <p class="small_title">Projects</p>
+                    <h2 class="sub_title">My recent works</h2>
+                    <p class="paragraph">{{p.p_description}}</p>
+                </div>
+
+                <!-- Project body -->
+                <div class="project_body">
+                    {% for i in ap %}
+                    <!-- single progect -->
+                    <div class="single_project">
+
+                        <div class="project_img" id="project01">
+                            <div class="black_layer"></div>
+                            <img src="{% static './asset/images/projects/innovative.png' %}" alt="">
+                        </div>
+                        <a href="#" class="medium_title">{{i.ap_description}}</a>
+
+                        <!-- Modao popup -->
+                        <div class="project_modal_main" id="project01">
+                            <div class="modal_body">
+                                <div class="modal_close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <div class="modal_body_inner">
+                                    <iframe width="100%" height="415" src="https://www.youtube.com/embed/5xIYf-i8Dqk?si=L3bcCTBu8qjnUV6n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="education_section sections" id="experienceSection">
+        <div class="container">
+            <div class="education_main row">
+
+                <!-- Education title -->
+                <div class="education_title text-center text-lg-start col-lg-5">
+                    <p class="small_title">experience</p>
+                    <h2 class="sub_title">My Experience</h2>
+                    <p class="paragraph">{{ex.ex_description}}</p>
+                </div>
+                <div class="experience_body col-lg-7 ps-lg-4">
+                    <!-- education single -->
+                    {% for i in a_ex %}
+                    <div class="education_single">
+                        <div class="edu_icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="edu_content">
+                            <h3 class="sub_title_2">{{i.a_ex_title}}</h3>
+                            <h4 class="medium_title">{{i.a_ex_institution}}<span class="small_text ms-2">({{i.a_ex_duration}})</span></h4>
+                            <p class="paragraph">{{i.a_ex_description}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research section -->
+    <section class="research_section sections" id="researchSection">
+        <div class="container">
+            <div class="research_main">
+
+                <!-- Research title -->
+                <div class="research_title text-center mb-4 mb-lg-5">
+                    <p class="small_title">research</p>
+                    <h2 class="sub_title">My Researched Projects</h2>
+                    <p class="paragraph">{{r.r_description}}</p>
+                </div>
+
+                <!-- Research body -->
+                <div class="research_body">
+
+                    <!-- Research single -->
+                    {% for i in ar %}
+                    <div class="research_single">
+                        <i class="fa-solid fa-people-arrows"></i>
+                        <h3 class="sub_title_2">{{i.a_res_title}}</h3>
+                        <p class="paragraph">{{i.a_res_description}}</p>
+                        <p class="duration">{{i.a_res_duration}}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun fact section -->
+    <section class="fun_fact_section sections">
+        <div class="container">
+            <div class="fun_fact_main row">
+
+                <!-- fun fact title -->
+                <div class="fun_fact_title col-lg-5">
+                    <p class="small_title">Fun fact</p>
+                    <h2 class="sub_title">I Develop System that Works</h2>
+                    <p class="paragraph">{{ff.ff_description}}</p>
+                </div>
+
+                <!-- fun fact body -->
+                <div class="fun_fact_body col-lg-7">
+
+                    <!-- fun fact single -->
+                     {% for i in af %}
+                    <div class="fun_single">
+                        <h3 class="fun_coutn">{{i.f_number}}</h3>
+                        <div class="fun_value">
+                            <p class="medium_title">{{i.f_lno}}</p>
+                            <p class="medium_title">{{i.f_lnt}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills section -->
+    <section class="skills_section sections" id="skillsSection">
+        <div class="container">
+            <div class="skill_main">
+
+                <!-- Skills title -->
+                <div class="skill_title text-center mb-4 mb-lg-5">
+                    <p class="small_title">my skills</p>
+                    <h2 class="sub_title">Growing Over Times</h2>
+                    <p class="paragraph">{{s.s_description}}</p>
+                </div>
+
+                <!-- Skills content -->
+                <div class="skill_body">
+                    <div class="skill_body_inner">
+
+                        <!-- skill single content -->
+                        {% for i in as %}
+                        <div class="skill_single">
+                            <div class="skill_single_inner text-center">
+                                <div class="single_content text-center">
+                                    <i class="fa-solid fa-code"></i>
+                                    <p class="slill_persentage">{{i.a_s_perc}}</p>
+                                </div>
+                            </div>
+                            <p class="medium_title">{{i.a_s_title}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS section -->
+    <section class="testimonial_section sections">
+        <div class="container">
+            <div class="estimonial_main row">
+
+                <!-- TESTIMONIALS title -->
+                <div class="testimonial_title col-lg-5">
+                    <p class="small_title">TESTIMONIALS</p>
+                    <h2 class="sub_title">What People Say</h2>
+                    <p class="paragraph">{{t.t_description}}</p>
+                </div>
+
+                <!-- TESTIMONIALS body -->
+                <div class="testimonial_body col-lg-7">
+                    <!-- Testimonial Single -->
+                    <div class="feedback_inner">
+                        {% for i in f %}
+                        <div class="feedback_single translate_0">
+                            <div class="feedback_top">
+                                <div class="client_img">
+                                    <img src="{% static './asset/images/client/Anower.jpg' %}" alt="">
+                                </div>
+                                <div class="client_info">
+                                    <p class="medium_title">{{i.f_name}}</p>
+                                    <p class="paragraph">{{i.f_designation}}</p>
+                                    <p class="client_company">{{i.f_company}}</p>
+                                </div>
+                            </div>
+                            <div class="feedback_bottom">
+                                <p class="feedback_text">{{i.f_feed}}</p>
+                            </div>
+                            <a href="#" class="project_link" target="_blank">Project</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Service section -->
+    <section class="service_section sections" id="serviceSection">
+        <div class="container">
+            <div class="service_main">
+
+                <!-- Service title -->
+                <div class="service_title text-center mb-4 mb-lg-5">
+                    <p class="small_title">services</p>
+                    <h2 class="sub_title">{{srvct.srvc_t}}</h2>
+                </div>
+
+                <!-- Service body -->
+                <div class="service_body">
+
+                    <!-- Service single -->
+                    {% for i in srvc %}
+                    <div class="service_single">
+                        <div class="service_inner">
+                            <div class="service_icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="service_content">
+                                <h2 class="sub_title_2">{{i.s_title}}</h2>
+                                <p class="paragraph">{{i.s_description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact_section sections" id="contactSection">
+        <div class="container">
+            <div class="contact_main row">
+
+                <!-- Contact Title -->
+                <div class="contact_title col-lg-5">
+                    <p class="small_title">Contact me</p>
+                    <h2 class="sub_title mb-4 mb-lg-5">{{c.cntc_t}}</h2>
+
+                    <div class="contact_info">
+                        <div class="s_info_single">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <p class="paragraph">{{cntc.cntc_address}}</p>
+                        </div>
+
+                        <div class="s_info_single">
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel: +8801705644008" class="paragraph calling_number">{{cntc.cntc_number}}</a>
+                        </div>
+
+                        <div class="s_info_single">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto: your.email@gmail.com" class="paragraph calling_number">{{cntc.cntc_email}}</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Body -->
+                <div class="contact_body col-lg-7">
+                    <form action="#" class="contact_form">
+                        <div class="form_input_group">
+                            <input type="text" class="form_input" placeholder="Your name">
+                            <input type="email" class="form_input" placeholder="Your email">
+                            <input type="tel" class="form_input" placeholder="Your mobile">
+                            <input type="text" class="form_input" placeholder="Your subject">
+                        </div>
+                        <textarea name="#" id="#" class="text_aria" placeholder="Massage"></textarea>
+
+                        <div class="submit_btn">
+                            <button class="btn_primary mt-3 mt-lg-4">Send Massages</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer_section sections">
+        <div class="container">
+            <div class="footer_main row">
+
+                <!-- footer single section -->
+                <div class="footer_single col-lg-4">
+                    <div class="footer_logo_div">
+                        <img src="{% static './asset/images/logos/profile.jpg' %}" alt="" class="footer_logo">
+                        <h2 class="footer_name">Salman Md Sultan</h2>
+                    </div>
+                    <div class="copy_right">
+                        <p class="paragraph">All right resurved by</p>
+                        <a href="innovativeskillsbd.com" target="_blank" class="copy_link">Innovative Skills</a>
+                    </div>
+                </div>
+
+                <!-- footer single section -->
+                <div class="footer_single newslatter_div col-lg-4">
+                    <h2 class="sub_title_2">Newsletter</h2>
+                    <form action="#" class="footer_form">
+                        <div class="news_latter">
+                            <input type="submi" placeholder="Submit your email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- footer single section -->
+                <div class="footer_single f_social_div col-lg-4">
+                    <h2 class="sub_title_2">Follow Me</h2>
+                    <div class="footer_social">
+                        <a href="#" class="f_social_link" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="f_social_link" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="f_social_link" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="f_social_link" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to top -->
+    <a href="#" class="back_to_top"><i class="fa-solid fa-angles-up"></i></a>
+
+    
+    
+
+    <!-------- Jquery cdn ------>
+    <script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js' %}"></script>
+
+    <!---------------- Bootstrap js ----------->
+    <script src="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!---------------- Costom js --------------->
+    <script src="{% static './asset/js/script.js' %}"></script>
+</body>
+</html>

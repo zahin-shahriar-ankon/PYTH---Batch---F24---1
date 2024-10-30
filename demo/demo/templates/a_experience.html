@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About A Experience's Description</h1>
+    <form action = "{% url 'a_ex_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for="">A Experience's Title : </label>
+        <input type = 'text' name = 'a_ex_title'><br><br>
+        <label for="">A Experience's Institution : </label>
+        <input type = 'text' name = 'a_ex_institution'><br><br>
+        <label for="">A Experience's Duration : </label>
+        <input type = 'text' name = 'a_ex_duration'><br><br>
+        <label for="">A Experience's Description : </label>
+        <input type = 'text' name = 'a_ex_description'><br><br>     
+        <input type = 'submit'><br><br>
+    </form>
+</body>
+</html>

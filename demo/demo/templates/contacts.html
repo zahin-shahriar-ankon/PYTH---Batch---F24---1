@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contact's Entry</h1>
+    <form action="{% url 'cntc_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for = ''>Contact's Address : </label>
+        <input type='text' name = 'cntc_address'><br><br>
+        <label for=''>Contact's Number : </label>
+        <input type='text' name = 'cntc_number'><br><br>
+        <label for=''>Contact's Email : </label>
+        <input type='text' name = 'cntc_email'><br><br>
+        <input type = 'submit'><br><br>
+    </form>
+</body>
+</html>

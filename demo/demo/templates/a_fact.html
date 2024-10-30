@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>A Fact's Entry</h1>
+    <form action="{% url 'af_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for="">Number :</label>
+        <input type="text" name = 'f_number'><br><br>
+        <label for="">Line 1 :</label>
+        <input type="text" name = 'f_lno'><br><br>
+        <label for="">Line 2 :</label>
+        <input type="text" name = 'f_lnt'><br><br>
+        <input type="submit"><br><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About A Skill's Description</h1>
+    <form action = "{% url 'a_s_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for="">Skill Percentage : </label>
+        <input type = 'text' name = 'a_s_perc'><br><br>
+        <label for="">Skill Title : </label>
+        <input type = 'text' name = 'a_s_title'><br><br>       
+        <input type = 'submit'><br><br>
+    </form>
+</body>
+</html>

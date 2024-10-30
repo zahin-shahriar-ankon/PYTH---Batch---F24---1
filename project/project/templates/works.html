@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About Works </h1>
+    <form action = "{% url 'works_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for = ''>Work Title 1 :</label>
+        <input type = 'text' name = 'w_name_box_1'><br><br>
+        <label for = ''>Work Description 1 :</label>
+        <input type = 'text' name = 'w_description_box_1'><br><br>
+        <label for = ''>Work Title 2 :</label>
+        <input type = 'text' name = 'w_name_box_2'><br><br>
+        <label for = ''>Work Description 2 :</label>
+        <input type = 'text' name = 'w_description_box_2'><br><br>
+        <label for = ''>Work Title 3 :</label>
+        <input type = 'text' name = 'w_name_box_3'><br><br>
+        <label for = ''>Work Description 3 :</label>
+        <input type = 'text' name = 'w_description_box_3'><br><br>
+        <label for = ''>Work Title 4 :</label>
+        <input type = 'text' name = 'w_name_box_4'><br><br>
+        <label for = ''>Work Description 4 :</label>
+        <input type = 'text' name = 'w_description_box_4'><br><br>
+        <input type = 'submit'><br><br>
+</body>
+</html>

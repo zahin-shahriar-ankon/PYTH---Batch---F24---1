@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>About Degree's Information</h1>
+    <form action = "{% url 'deg_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for="">Degree's Title : </label>
+        <input type = 'text' name = 'd_title'><br><br>
+        <label for="">Institution of Degree : </label>
+        <input type = 'text' name = 'd_institution'><br><br>
+        <label for="">Duration of Degree : </label>
+        <input type = 'text' name = 'd_duration'><br><br>
+        <label for="">Degree's Description : </label>
+        <input type = 'text' name = 'd_description'><br><br>       
+        <input type = 'submit'><br><br>
+    </form>
+</body>
+</html>

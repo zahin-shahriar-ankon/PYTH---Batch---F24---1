@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>First Experience Entry </h1>
+    <form action = "{% url 'f_ex_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for = ''>Title : </label>
+        <input type = 'text' name = 'f_ex_title'><br><br>
+        <label for = ''>Institute : </label>
+        <input type = 'text' name = 'f_ex_institute'><br><br>
+        <label for = ''>Description : </label>
+        <input type = 'text' name = 'f_ex_description'><br><br>
+        <input type = 'submit'><br><br>
+</body>
+</html>

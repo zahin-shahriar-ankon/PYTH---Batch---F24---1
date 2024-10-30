@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Second Education Duration Entry </h1>
+    <form action = "{% url 'sc_dr_insert' %}" method = 'POST'>
+        {% csrf_token %}
+        <label for = ''>Duration : </label>
+        <input type = 'text' name = 'sc_duration'><br><br>
+        <input type = 'submit'><br><br>
+</body>
+</html>

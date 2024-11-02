@@ -86,6 +86,4 @@ class Contact(models.Model):
 class Contacts(models.Model):
     cntc_address = models.CharField(max_length = 500)
     cntc_number = models.CharField(max_length = 500)
-    cntc_email = models.CharField(max_length = 500)
-
-
+    cntc_email = models.CharField(max_l

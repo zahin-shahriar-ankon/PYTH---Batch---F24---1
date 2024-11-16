@@ -3,6 +3,7 @@ from django.db import models
 class Intro(models.Model):
     i_name = models.CharField(max_length = 500)
     i_occupation = models.CharField(max_length = 500)
+    i_image = models.ImageField(upload_to = 'i_image')
 
 class Works(models.Model):
     w_title = models.CharField(max_length = 500)
@@ -86,4 +87,4 @@ class Contact(models.Model):
 class Contacts(models.Model):
     cntc_address = models.CharField(max_length = 500)
     cntc_number = models.CharField(max_length = 500)
-    cntc_email = models.CharField(max_l
+    cntc_email = models.CharField(max_length = 500)

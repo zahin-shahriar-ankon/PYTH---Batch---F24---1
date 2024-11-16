@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home),
@@ -62,4 +64,4 @@ urlpatterns = [
     path('cntc_t/insert', views.cntc_tInsert, name = 'cntc_t_insert'),
     path('cntc/', views.cntc, name = 'cntc_admin'),
     path('cntc/insert', views.cntcInsert, name = 'cntc_insert'),
-]
+]+ static (settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

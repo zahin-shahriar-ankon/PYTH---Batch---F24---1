@@ -3,7 +3,7 @@ from django.shortcuts import render,redirect
 from . models import *
 
 def home(req):
-    intro_data = Intro.objects.get(id = 1)
+    intro_data = Intro.objects.get(id = 2)
     works_data = Works.objects.all()
     about_me_data = AboutMe.objects.get(id = 1)
     edu_data = Education.objects.get(id = 1)
@@ -35,11 +35,13 @@ def intro(req):
 def introInsert(req):
     name = req.POST.get('i_name')
     occupation = req.POST.get('i_occupation')
+    image = req.FILES.get('img')
 
     intro_obj = Intro()
 
     intro_obj.i_name = name
     intro_obj.i_occupation = occupation
+    intro_obj.i_image = image
 
     intro_obj.save()
 
@@ -155,7 +157,7 @@ def ex(req):
 def exInsert(req):
     description = req.POST.get('ex_description')
 
-    ex_obj = Experiences()
+    ex_obj = Experience()
 
     ex_obj.ex_description = description
 
